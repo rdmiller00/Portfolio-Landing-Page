@@ -1,0 +1,42 @@
+body{
+    background-color: white;
+display: grid;
+height: 100vh;
+grid-template-areas:
+"topbar  topbar"
+"ads  content"
+"footer  footer";
+grid-template-columns: 1fr 3fr 1fr;
+}
+
+header{
+    grid-area: topbar;
+    text-align: center;
+}
+
+ads{
+    grid-area: ads;
+    text-align: center;
+}
+
+content{
+    grid-area: content;
+    text-align: center;
+}
+
+sidenav{
+    grid-area: nav;
+    text-align: center;
+}
+
+footer{
+    grid-area: footer;
+    text-align: center;
+}
+
+header div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+}

@@ -1,0 +1,68 @@
+body{
+    background-color: ivory;
+    display: flex;
+    flex-direction:column;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+"topbar  topbar"
+"ads  content"
+"footer  footer";
+grid-template-columns: 1fr 5fr;
+}
+
+header{
+    grid-area: topbar;
+    text-align: center;
+    display: flex;
+    width: 100vh
+}
+
+.ads{
+    grid-area: ads;
+
+}
+
+.content{
+    grid-area: content;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    align-items: center;
+}
+
+
+.web-logo a img {
+    width: 50px;
+    border-radius: 10px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: darkgray;
+    height: 25px;
+    text-decoration: none;
+}
+
+.nav-icons a{
+    text-decoration: none;
+    color: white;
+    gap: 100px;
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    grid-area: footer;
+    text-align: center;
+
+}
